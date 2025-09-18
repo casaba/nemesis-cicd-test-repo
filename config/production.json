@@ -1,0 +1,61 @@
+{
+  "database": {
+    "host": "prod-db.example.com",
+    "port": 5432,
+    "name": "production_db",
+    "username": "db_admin",
+    "password": "SuperSecretPassword123!",
+    "connection_string": "postgresql://db_admin:SuperSecretPassword123!@prod-db.example.com:5432/production_db"
+  },
+  "api": {
+    "key": "api_key_live_51H3Fg2KlmnopqrstUVWxyz1234567890",
+    "secret": "api_secret_key_production_do_not_expose",
+    "timeout": 30000,
+    "retries": 3,
+    "endpoints": {
+      "auth": "https://api.production.com/auth",
+      "data": "https://api.production.com/data"
+    }
+  },
+  "jwt": {
+    "secret": "my-super-secret-jwt-key-do-not-share-production",
+    "expiry": "24h",
+    "algorithm": "HS256"
+  },
+  "github": {
+    "token": "ghp_RealProductionToken1234567890abcdef",
+    "webhook_secret": "github_webhook_secret_production"
+  },
+  "slack": {
+    "webhook": "https://hooks.slack.com/services/T00000000/B00000000/XXXXXXXXXXXXXXXXXXXX",
+    "bot_token": "xoxb-production-slack-bot-token"
+  },
+  "mongodb": {
+    "connection_string": "mongodb://admin:AdminPassword123@prod-mongo.example.com:27017/production?authSource=admin"
+  },
+  "redis": {
+    "host": "prod-redis.example.com",
+    "port": 6379,
+    "password": "RedisPassword123!"
+  },
+  "stripe": {
+    "public_key": "stripe_public_key_test_abcdef123456",
+    "secret_key": "stripe_secret_key_test_1234567890abcdef"
+  },
+  "aws": {
+    "access_key_id": "AKIAIOSFODNN7EXAMPLE",
+    "secret_access_key": "wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY",
+    "region": "us-east-1",
+    "s3_bucket": "production-data-bucket"
+  },
+  "sendgrid": {
+    "api_key": "SG.RealProductionSendGridKey1234567890"
+  },
+  "twilio": {
+    "account_sid": "ACxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+    "auth_token": "production_twilio_auth_token_secret"
+  },
+  "encryption": {
+    "master_key": "ThisIsTheProductionMasterEncryptionKey!@#$%"
+  }
+}
